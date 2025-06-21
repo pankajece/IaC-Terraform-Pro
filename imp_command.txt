@@ -1,0 +1,17 @@
+#Configure the service principal
+az login --service-principal -u CLIENT_ID -p CLIENT_SECRET --tenant TENANT_ID
+az login --service-principal -u "" -p "" --tenant ""
+
+# command for show the specefic resource group
+az group show --name pan-rg-main
+
+# command for use tfvars file
+terrarorm plan -var -file="git.dev.tfvars"
+
+
+# for seeting credential into env vaiable using below command
+
+$env:ARM_CLIENT_ID = ""
+$env:ARM_CLIENT_SECRET = ""
+$env:ARM_SUBSCRIPTION_ID = ""
+$env:ARM_TENANT_ID = ""
