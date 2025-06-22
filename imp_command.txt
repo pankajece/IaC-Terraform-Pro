@@ -15,3 +15,14 @@ $env:ARM_CLIENT_ID = ""
 $env:ARM_CLIENT_SECRET = ""
 $env:ARM_SUBSCRIPTION_ID = ""
 $env:ARM_TENANT_ID = ""
+
+
+#git stash command 
+git stash 
+git stash list
+git stash -u
+git stash --include-git
+
+
+git pop
+
