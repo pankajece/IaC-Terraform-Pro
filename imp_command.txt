@@ -23,6 +23,8 @@ git stash list
 git stash -u
 git stash --include-git
 
+git reset 
+
 
 git pop
 
